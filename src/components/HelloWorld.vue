@@ -1,12 +1,13 @@
 <template>
-  <v-container>
-    <v-row class="text-center">
-      <v-col cols="12">
+  <v-container fluid>
+    <v-row dense>
+      <v-col
+          v-for="boss in bosses"
+          v-bind:key="boss.id"
+      >
         <v-card
             class="mx-auto"
             max-width="400"
-            v-for="boss in bosses"
-            v-bind:key="boss.id"
         >
           <v-img
               class="white--text align-end"

@@ -2,7 +2,6 @@
   <v-app>
     <v-app-bar
       app
-      color="primary"
       dark
     >
       <v-app-bar-title>D2R Counter</v-app-bar-title>
