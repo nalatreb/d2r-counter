@@ -22,7 +22,7 @@
     ]
   },
   {
-    "id": 1,
+    "id": 2,
     "name": "Mephisto",
     "image": "images/Diablo_II_Resurrected_Logo.jpg",
     "difficulties": [
@@ -44,7 +44,7 @@
     ]
   },
   {
-    "id": 1,
+    "id": 3,
     "name": "Diablo",
     "image": "images/Diablo_II_Resurrected_Logo.jpg",
     "difficulties": [
@@ -66,7 +66,7 @@
     ]
   },
   {
-    "id": 1,
+    "id": 4,
     "name": "Baal",
     "image": "images/Diablo_II_Resurrected_Logo.jpg",
     "difficulties": [

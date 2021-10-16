@@ -30,7 +30,7 @@
                         dark
                         x-small
                     >
-                      <v-icon dark>
+                      <v-icon dark @click="increase(boss.id, difficulty.id)">
                         mdi-plus
                       </v-icon>
                     </v-btn>
@@ -56,5 +56,12 @@
     data: () => ({
       bosses
     }),
+    methods: {
+      increase(bossId, difficultyId) {
+        console.log(bossId, difficultyId);
+        const boss = this.bosses.filter(boss => boss.id === bossId).pop();
+        boss.difficulties.filter(difficulty => difficulty.id === difficultyId).pop().count += 1;
+      }
+    }
   }
 </script>
