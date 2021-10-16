@@ -49,17 +49,14 @@
 </template>
 
 <script>
-  import bosses from '../assets/boss_template.json'
-
   export default {
     name: 'HelloWorld',
 
-    data: () => ({
-      bosses
-    }),
+    props: {
+      bosses: Array
+    },
     methods: {
       increase(bossId, difficultyId) {
-        console.log(bossId, difficultyId);
         const boss = this.bosses.filter(boss => boss.id === bossId).pop();
         boss.difficulties.filter(difficulty => difficulty.id === difficultyId).pop().count += 1;
       }
