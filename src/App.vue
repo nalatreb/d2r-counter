@@ -8,6 +8,10 @@
 
       <v-spacer></v-spacer>
 
+      <v-btn @click="reset()">
+        Reset
+      </v-btn>
+
       <v-btn @click="save()">
         Save
       </v-btn>
@@ -38,7 +42,8 @@ export default {
   },
 
   data: () => ({
-    bosses
+    bosses,
+    loadedBosses: bosses
   }),
   methods: {
     async save() {
@@ -55,10 +60,14 @@ export default {
       const file = document.getElementById('file-load').files[0];
       const reader = new FileReader();
       reader.onload = (event) => {
-        console.log(event.target.result);
+        this.bosses = JSON.parse(event.target.result);
+        this.loadedBosses = JSON.parse(event.target.result);
       }
       reader.readAsText(file);
+    },
+    reset() {
+      this.bosses = JSON.parse(JSON.stringify(this.loadedBosses));
     }
-  }
+  },
 };
 </script>
