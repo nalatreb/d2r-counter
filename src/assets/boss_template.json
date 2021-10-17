@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Andariel",
-    "image": "images/Diablo_II_Resurrected_Logo.jpg",
+    "image": "images/andariel.jpg",
     "difficulties": [
       {
         "id":1,
@@ -23,8 +23,8 @@
   },
   {
     "id": 2,
-    "name": "Mephisto",
-    "image": "images/Diablo_II_Resurrected_Logo.jpg",
+    "name": "Duriel",
+    "image": "images/duriel.jpg",
     "difficulties": [
       {
         "id": 1,
@@ -45,8 +45,8 @@
   },
   {
     "id": 3,
-    "name": "Diablo",
-    "image": "images/Diablo_II_Resurrected_Logo.jpg",
+    "name": "Mephisto",
+    "image": "images/mephisto.jpg",
     "difficulties": [
       {
         "id": 1,
@@ -67,8 +67,30 @@
   },
   {
     "id": 4,
+    "name": "Diablo",
+    "image": "images/diablo.jpg",
+    "difficulties": [
+      {
+        "id": 1,
+        "text": "N",
+        "count": 0
+      },
+      {
+        "id": 2,
+        "text": "NM",
+        "count": 0
+      },
+      {
+        "id": 3,
+        "text": "H",
+        "count": 0
+      }
+    ]
+  },
+  {
+    "id": 5,
     "name": "Baal",
-    "image": "images/Diablo_II_Resurrected_Logo.jpg",
+    "image": "images/baal.jpg",
     "difficulties": [
       {
         "id": 1,
